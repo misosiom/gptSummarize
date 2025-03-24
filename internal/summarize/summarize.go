@@ -16,7 +16,7 @@ func SummarizeText(content string) (string, error) {
 	payload := map[string]interface{}{
 		"model": "gpt-4",
 		"messages": []map[string]string{
-			{"role": "user", "content": "次の文章を要約し、日本語に訳してください:\n\n" + content},
+			{"role": "user", "content": "Please summarize the following text and list the important points in bullet form. Then, translate the summary into Japanese.:\n\n" + content},
 		},
 	}
 
